@@ -1,0 +1,112 @@
+.services {
+    padding: 114px 0 108px 0;
+}
+.services__row {
+    display: flex;
+}
+.services__text {
+    margin-top: 30px;
+}
+.services__button {    
+    margin-top: 50px;
+    color: #ff2d2d;
+    background: #ffffff;
+    border: 2px solid #ff0000;
+}
+.services__item {
+    flex: 0 0 50%;
+    &:first-child {
+        padding-right: 127px;
+    }
+    .item__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item__element {
+        flex: 0 0 50%;
+        &:nth-child(3), &:nth-child(4) {
+            margin-top: 44px;
+        }
+        &:nth-child(1), &:nth-child(3) {
+            padding-right: 25px;
+        }
+        &:nth-child(2), &:nth-child(4) {
+            padding-left: 25px;
+        }
+    }
+    .item__title {
+        margin: 22px 0 8px 0;
+        opacity: 0.7;
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+    }
+}
+
+.services__more {
+    position: fixed;
+    background-color: #f6f2f2;
+    width: 80%;
+    height: 80%;
+    left: 100%;
+    top: 10%;
+    border: 2px solid black;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: auto;
+    transition: 0.8s;
+    &::-webkit-scrollbar {
+        width: 12px;    
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 16px;    
+        background-color: #ffffff;
+        border: 1px solid #000000;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #f5e3e3;
+        border-radius: 16px;    
+        border: 1px solid #000000;
+    }
+}
+.services__more._active {
+    left: 10%;
+}
+.services__close {
+    position: sticky;
+    width: 64px;
+    top: 0;
+    margin-left: 94%;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 2px;
+    padding: 4px;
+    z-index: 3;
+}
+
+.services__line {
+    width: 1249px;
+    height: 2px;
+    background-color: #ececec;
+    margin-top: 108px;
+}
+
+.item__img {
+    width: 44px;
+    height: 41px;
+}
+.item__img_settings {
+    background: url('/img/icons/settings.png') no-repeat;
+}
+.item__img_pencil {
+    background: url('/img/icons/pencil.png') no-repeat;
+}
+.item__img_diamond {
+    background: url('/img/icons/diamond.png') no-repeat;
+}
+.item__img_truck {
+    background: url('/img/icons/truck.png') no-repeat;
+}
